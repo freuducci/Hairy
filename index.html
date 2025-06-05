@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hairy - You Groom You Glory | Natural Hair & Beard Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+        }
+
+        body {
+            background-color: #5e2e2e;
+            font-family: 'Montserrat', sans-serif;
+            color: #f5f5f5;
+        }
+        .product-bottle {
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+            transition: transform 0.5s ease;
+        }
+        .product-bottle:hover {
+            transform: scale(1.05);
+        }
+        .section-divider {
+            border-top: 2px solid #d1a370;
+            margin: 4rem auto;
+            width: 80%;
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #d1a370;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .cta-button {
+            background: linear-gradient(to right, #d1a370, #a67c52);
+            box-shadow: 0 4px 15px rgba(209, 163, 112, 0.4);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(209, 163, 112, 0.6);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#5e2e2e] bg-opacity-90">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-user text-2xl text-[#d1a370] mr-2"></i>
+                    <span class="text-xl font-bold">Hairy</span>
+                    <span class="text-sm ml-2 text-[#d1a370]">You Groom You Glory</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#product" class="nav-link">Product</a>
+                    <a href="#benefits" class="nav-link">Benefits</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#order" class="nav-link">Order Now</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="pt-32 pb-20 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <span class="text-[#d1a370]">Transform</span> Your Beard & Hair Naturally
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 leading-relaxed">
+                Hairy - The ultimate natural solution for faster growth, thicker beard and stronger hair.
+                Our scientifically-formulated blend delivers visible results in weeks.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-16">
+                <button class="cta-button px-8 py-4 rounded-full text-lg font-semibold text-white">
+                    Order Now
+                </button>
+                <button class="border-2 border-[#d1a370] px-8 py-4 rounded-full text-lg font-semibold text-[#d1a370] hover:bg-[#d1a370] hover:text-white transition-all">
+                    Learn More
+                </button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078483?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                 alt="Man styling his beard" 
+                 class="mx-auto rounded-xl shadow-2xl w-full max-w-3xl border-4 border-[#d1a370]">
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Product Showcase -->
+    <section id="produit" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Discover <span class="text-[#d1a370]">Hairy</span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Hair growth oil bottle" 
+                         class="product-bottle w-64 h-auto border-2 border-[#d1a370]">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Nature's Power in One Bottle</h3>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Hairy combines traditional botanical oils with modern nutrients to naturally stimulate 
+                        hair and beard growth. Our revolutionary formula works with your body to enhance follicle health.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-[#d1a370] text-xl mr-3 mt-1"></i>
+                            <span>Stimulates growth</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-[#d1a370] text-xl mr-3 mt-1"></i>
+                            <span>Thickens hair</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-[#d1a370] text-xl mr-3 mt-1"></i>
+                            <span>Prevents hair loss</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-[#d1a370] text-xl mr-3 mt-1"></i>
+                            <span>100% Natural</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold text-[#d1a370] mr-4">49€</span>
+                        <span class="line-through opacity-70">65€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Benefits Section -->
+    <section id="bienfaits" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Why Choose <span class="text-[#d1a370]">Hairy</span>?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-8 rounded-xl bg-[#4a2525] text-center">
+                    <div class="text-[#d1a370] text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">100% Natural</h3>
+                    <p>
+                        Formulated with carefully selected natural ingredients to nourish and strengthen your hair follicles without side effects.
+                    </p>
+                </div>
+                <div class="p-8 rounded-xl bg-[#4a2525] text-center">
+                    <div class="text-[#d1a370] text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Fast Results</h3>
+                    <p>
+                        Visible results from the first weeks of use. Faster growth and improved texture.
+                    </p>
+                </div>
+                <div class="p-8 rounded-xl bg-[#4a2525] text-center">
+                    <div class="text-[#d1a370] text-4xl mb-4">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Premium Quality</h3>
+                    <p>
+                        Manufactured with high quality standards to ensure maximum product effectiveness.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Ingrédients Actifs</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-seedling text-[#d1a370] mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Castor Oil</h4>
+                                <p class="text-sm">Rich in fatty acids to nourish follicles and stimulate growth.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-leaf text-[#d1a370] mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Moringa Extract</h4>
+                                <p class="text-sm">Provides essential vitamins and minerals for stronger hair.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-spa text-[#d1a370] mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Rosemary Oil</h4>
+                                <p class="text-sm">Improves blood circulation for enhanced growth.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-tree text-[#d1a370] mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Shea Butter</h4>
+                                <p class="text-sm">Hydrates and protects hair from environmental damage.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1604866830601-37f1be8df9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Man applying beard oil" 
+                         class="rounded-xl shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Testimonials -->
+    <section id="temoignages" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Satisfied <span class="text-[#d1a370]">Customers</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                             alt="Jean D." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Jean D.</h4>
+                            <div class="flex text-[#d1a370]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        "After 3 months of use, my beard is thicker than ever. The patchy areas have completely filled in. Highly recommended!"
+                    </p>
+                </div>
+                <div class="testimonial-card p-8">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/54.jpg" 
+                             alt="Marc A." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Marc A.</h4>
+                            <div class="flex text-[#d1a370]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        "I tried several products before without success. Hairy made my beard grow where nothing grew before. Impressive!"
+                    </p>
+                </div>
+                <div class="testimonial-card p-8">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" 
+                             alt="Sophie R." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sophie R.</h4>
+                            <div class="flex text-[#d1a370]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        "My hair was thin and brittle. After 2 months with Hairy, it's thicker, longer and much healthier. I'm thrilled!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Before/After -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Transformations <span class="text-[#d1a370]">Avant/Après</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold mb-4">Before Treatment</h3>
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ce329fd0c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Before treatment - bald with no beard" 
+                         class="rounded-xl w-full max-w-md mx-auto border-2 border-red-500">
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold mb-4">After 8 Weeks</h3>
+                    <img src="https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" 
+                         alt="After treatment - same man with full hair and beard" 
+                         class="rounded-xl w-full max-w-md mx-auto border-2 border-green-500 filter brightness-105">
+            </div>
+            <p class="text-center mt-10 max-w-2xl mx-auto">
+                *Results may vary by individual. Regular use is recommended for optimal effects.
+            </p>
+        </div>
+    </section>
+
+    <!-- How to Use -->
+    <section class="py-20 px-4 bg-[#4a2525]">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                How to Use <span class="text-[#d1a370]">Hairy</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="bg-[#5e2e2e] text-[#d1a370] text-2xl w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cleanse</h3>
+                    <p>Wash your face or hair with a gentle cleanser and pat dry.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="bg-[#5e2e2e] text-[#d1a370] text-2xl w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Apply</h3>
+                    <p>Massage a few drops of product onto desired areas with circular motions.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="bg-[#5e2e2e] text-[#d1a370] text-2xl w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Repeat</h3>
+                    <p>Use twice daily for optimal results. Be consistent!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="commander" class="py-20 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                Ready to <span class="text-[#d1a370]">Transform</span> Your Hair and Beard?
+            </h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">
+                Stop wasting time with ineffective products. Order Hairy today and see the difference!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <button class="cta-button px-8 py-4 rounded-full text-lg font-semibold text-white">
+                    <i class="fas fa-shopping-cart mr-2"></i> Order Now
+                </button>
+                <button class="border-2 border-[#d1a370] px-8 py-4 rounded-full text-lg font-semibold text-[#d1a370] hover:bg-[#d1a370] hover:text-white transition-all">
+                    <i class="fas fa-phone-alt mr-2"></i> Contact Us
+                </button>
+            </div>
+            <p class="mt-8 text-sm">
+                <i class="fas fa-shield-alt mr-2"></i> 30-day money-back guarantee
+            </p>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/?text=Hello" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-[#4a2525] py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <i class="fas fa-cut text-2xl text-[#d1a370] mr-2"></i>
+                    <span class="text-xl font-bold">Hairy</span>
+                </div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-2xl hover:text-[#d1a370] transition-colors">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-2xl hover:text-[#d1a370] transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-2xl hover:text-[#d1a370] transition-colors">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="text-2xl hover:text-[#d1a370] transition-colors">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">
+                        &copy; 2023 Hairy. All rights reserved.<br>
+                        <a href="#" class="hover:text-[#d1a370]">Privacy Policy</a> | 
+                        <a href="#" class="hover:text-[#d1a370]">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle (would need additional CSS)
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        mobileMenuButton.addEventListener('click', function() {
+            // Would toggle mobile menu here
+            alert("Mobile menu would open here in full implementation");
+        });
+    </script>
+</body>
+</html>
